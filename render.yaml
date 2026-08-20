@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: tradesense-risk-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: tradesense-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: tradesense-redis
+          property: connectionString
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: RISK_CACHE_TTL_SECONDS
+        value: "300"
+
+  - type: redis
+    name: tradesense-redis
+    plan: free
+    ipAllowList: []
+
+databases:
+  - name: tradesense-db
+    plan: free
