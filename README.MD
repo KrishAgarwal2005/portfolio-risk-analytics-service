@@ -1,7 +1,7 @@
 
 Portfolio Risk API
 
-[![CI](https://github.com/KrishAgarwal2005/TradeSense-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/KrishAgarwal2005/TradeSense-AI/actions/workflows/ci.yml)
+[![CI](https://github.com/KrishAgarwal2005/portfolio-risk-analytics-service/actions/workflows/ci.yml/badge.svg)](https://github.com/KrishAgarwal2005/portfolio-risk-analytics-service/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A REST service that computes portfolio risk over a position book: historical
@@ -65,8 +65,8 @@ python-jose (JWT) · bcrypt · pytest · Docker Compose
 ## Quickstart (Docker Compose)
 
 ```bash
-git clone https://github.com/KrishAgarwal2005/TradeSense-AI.git
-cd TradeSense-AI
+git clone https://github.com/KrishAgarwal2005/portfolio-risk-analytics-service.git
+cd portfolio-risk-analytics-service
 docker compose up --build
 ```
 
