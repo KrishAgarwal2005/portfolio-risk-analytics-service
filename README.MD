@@ -1,4 +1,5 @@
-# TradeSense — Portfolio Risk API
+
+Portfolio Risk API
 
 [![CI](https://github.com/KrishAgarwal2005/TradeSense-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/KrishAgarwal2005/TradeSense-AI/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
